@@ -1,0 +1,1 @@
+export const LOAD_ALL_SEMESTER = 'LOAD_ALL_SEMESTER';

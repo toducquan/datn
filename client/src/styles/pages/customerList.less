@@ -1,0 +1,265 @@
+.customer-card_search{
+    & .ant-card-head-title{
+        font-weight: bold;
+        font-size: 14px;
+    }
+    & .__th{
+        width: 110px !important;
+        padding-top: 11px !important;
+    }
+    & .ant-card-body{
+        min-height: 233px;
+        margin-top: -10px;
+    }
+    & .custom-card-toppage-row{
+        margin-top: 0px;
+        border: none;
+    }
+
+    & .ant-picker-input{
+        input {
+            border: none !important;
+        }
+    }
+    
+    & .border-right {
+        min-height: 162px;
+        width: 66%;
+    }
+    & .border-left {
+        width: 34%;
+    }
+    & .row-custom-table{
+        height: 160px;
+    }
+    & .col-custom-table{
+        height: 40px;
+        border: 1px solid @border-table-color;
+    }
+    & .background-gray {
+        background-color: #F8F8F8;
+    }
+    &-row {
+        margin: 20px;
+        border: 1px solid @border-table-color;
+    }
+    & .custom-row{
+        width: 100%;
+        height: 80px;
+        margin-left: 0px;
+        .ant-col {
+            width: 50%;
+        }
+        & .row-custom-table{
+            height: 80px;
+        }
+    }
+    & .btn-yellow{
+        span {
+            margin-right: 3px;
+        }
+    }
+    & .custom-input{
+        width: 99.2% !important;
+    }
+}
+
+.customer-card_table{
+    & .ant-card-body{
+        margin-top: -20px;
+    }
+    & .ant-card-head-title{
+        font-weight: bold;
+        font-size: 14;
+    }
+    & .ant-pagination-prev, .ant-pagination-options {
+        display: none;
+    }
+    & .ant-pagination-item {
+        border: none;
+    }
+    & .ant-pagination-item-active{
+        border: 1px solid #43b569;
+        border-radius: 0px;
+    }
+    & .ant-pagination-item-link{
+        width: 75px;
+        background-color: @green-color;
+        background-image:url("../../assets/vendors/images/next-page.png");
+        background-repeat: no-repeat;
+        background-position-x: 92%;
+        background-position-y: 6px;
+    }
+    & .ant-pagination-item-link:after{
+        content: '次へ';
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: -8px;
+    }
+    & .anticon-right {
+        svg {
+            display: none;
+        }
+    }
+    & .ant-table-column-has-sorters:nth-child(1){
+        & .ant-table-column-sorters{
+            text-align: left;
+            width: 70px;
+        }
+    }
+    & .ant-table-thead > tr > th {
+        padding: 0px 16px !important;
+    } 
+}
+
+.customer-card_edit, .customer-card_search {
+    & .__td{
+        margin-right: 30px;
+        select, & .card-detail-table__td__date {
+            margin: 5px 10px 5px 0;
+            height: 29px;
+            width: 98%;
+            padding-left: 5px;
+            border: 1px solid #d6d6d6;
+        }
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+            background-repeat: no-repeat;
+            background-position-x: 96%;
+            background-position-y: 2px;
+        }
+    }
+}
+
+.customer-card_edit {
+    width: 1058px;
+    .custom-table-mail{
+        border-bottom: none;
+    }
+    & .ant-card-head-title{
+        font-weight: bold;
+        font-size: 14;
+    }
+    & .ant-card-body{
+        min-height: 690px;
+    }
+    & .custom-table-mail{
+        margin: 0 140px;
+        & .__th{
+            width: 180px;
+        }
+        & .select-box{
+            height: 140px;
+        }
+    }
+    & .next-table {
+        border-top: none;
+    }
+    & .custom-row{
+        margin: 0 140px;
+        width: 776px;
+        .row-custom-table {
+            border: 1px solid @border-table-color;
+            border-top: none;
+            border-bottom: none;
+        }
+        & .background-gray{
+            background-color: #F8F8F8;
+        }
+        & .ant-col{
+            width: 50%;
+        }
+        & .__td, .__th {
+            border-bottom: 1px solid @border-table-color;
+        }
+    }
+    & .__td{
+        margin-right: 0px;
+        select {
+            width: 193px;
+            margin-left: 9px;
+            border-radius: 0;
+        }
+        input {
+            margin: 5px 10px 5px 9px;
+            height: 29px;
+            padding-left: 5px;
+            border: 1px solid #d6d6d6;
+        }
+        & .card-detail-table__td__checkbox__name{
+            display: inline-block;
+            transform: translateY(-11px);
+        }
+        & .search-optional {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            width: 192px;
+        }
+    }
+    & .input_flex{
+        float: left;
+        width: 270px;
+        height: 32px;
+    }
+    & .input_name{
+        display: flex;
+        input {
+            margin: 0 !important;
+            margin-top: 5px !important;
+            margin-bottom: 5px !important;
+            margin-right: 4px !important;
+            width: 90px;
+        }
+    }
+}
+.customer-model-edit{
+    font-size: 13px;
+    & .title {
+        font-weight: bold;
+    }
+    & .ant-row{
+        margin: 5px 0px;
+    }
+    & .btn {
+        margin: 0 10px;
+        padding: 0px 24px;
+        line-height: 40px;
+        width: 185px;
+        height: 40px;
+        font-size: 18px;
+        color: @white-color;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        &-red {
+          background-color: @custom-red-color;
+        }
+        &-grey {
+          background-color: @grey-10;
+        }
+        &-confirm {
+          background-color: #2461ad;
+        }
+        &-yellow {
+          background-color: @yellow-color;
+        }
+        &-back {
+          background-color: @gray-custom-color;
+          color: @white-color;
+        }
+    }
+}
+.ant-card-head-title{
+    font-weight: bold;
+    font-size: 14px;
+}
+.customer-edit{
+    & .__td_id{
+        line-height: 35px;
+        padding-left: 14px;
+    }
+}
+

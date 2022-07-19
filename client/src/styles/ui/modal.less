@@ -1,0 +1,213 @@
+/*Modal Styles*/
+.ant-modal {
+  &-title {
+    text-align: center;
+    color: @white-color;
+    font-size: @h3-font-size;
+    font-weight: @font-weight-bold;
+  }
+  &-header {
+    background-color: @green-color;
+    padding: @size-10+2 @size-20+4;
+    border-radius: unset;
+  }
+  &-close-x {
+    color: @white-color;
+    font-size: @size-40 - 5;
+    width: @size-50 - 3;
+    height: @size-50 - 3;
+    line-height: @size-50 - 3;
+  }
+  &-content {
+    border-radius: unset;
+  }
+}
+
+.purchase-modal{
+  .ant-modal{
+    &-title {
+      font-size: 16px !important; 
+    }
+  }
+}
+
+.status-modal {
+  .ant-modal{
+    &-header {
+      background-color: @custom-red-color;
+      padding: 6px @size-20+4;
+    }
+    &-title {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    &-body {
+      padding: 20px;
+    }
+  }
+  &-content {
+    text-align: center;
+    p {
+      padding: 18px 0;
+      margin: 0;
+    }
+  }
+  &-btn {
+      margin: 0 10px;
+      padding: 5px 24px;
+      font-size: 14px;
+      color: @white-color;
+      border: none;
+      border-radius: 5px;
+      &-red {
+        background-color: @custom-red-color;
+      }
+      &-grey {
+        background-color: @grey-10;
+      }
+      &-confirm {
+        background-color: #2461ad;
+      }
+      &-yellow {
+        background-color: @yellow-color;
+      }
+  }
+}
+
+.status-modal__success {
+  .ant-modal{
+    &-header {
+      background-color: @green-color;
+    }
+  }
+}
+
+.custom-modal {
+  .ant-modal{
+    &-header {
+      padding: @size-10+3 @size-20+4;
+      max-height: 48px;
+    }
+    &-title {
+      font-size: 18px;
+    }
+    &-body {
+      padding: 20px;
+    }
+    &-footer {
+      display: flex;
+      justify-content: center;
+      border-top: none;
+      padding-bottom: 30px;
+    }
+  }
+  &-footer {
+    color: @white-color;
+    width: 185px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px !important;
+    font-size: 18px;
+    &__edit {
+      background-color: @primary-modal-color;
+    }
+    &__order-history {
+      background-color: @green-custom-color;
+    }
+    &__close {
+      background-color: @grey-10;
+    }
+  }
+
+  .card-detail {
+    position: relative;
+    padding-bottom: 20px;
+    &__title {
+      text-align: center;
+      font-size: 16px;
+      color: @green-custom-color;
+      font-weight: bold;
+      padding-bottom: 5px;
+    }
+    &__date_update {
+      position: absolute;
+      font-size: 12px;
+      top: 0;
+      right: 0;
+    }
+    &-table {
+      // padding: 5px 0;
+      margin: 0;
+      &-col {
+        display: flex;
+        padding: 0;
+        margin: 0;
+      }
+      &__item {
+        display: inline-block;
+        height: 31px;
+        color: @black-color;
+        font-size: 12px;
+        line-height: 31px;
+        border-right: 1px solid @border-table-color;
+        border-top: 1px solid @border-table-color;
+        &__left {
+          border-left: 1px solid @border-table-color;
+        }
+        &__bottom {
+          border-bottom: 1px solid @border-table-color;
+        }
+      }
+      &__th {
+        min-width: 180px;        
+        text-align: center;
+        background-color: @table-header-color;
+        font-weight: bold;
+      }
+      &__td {
+        flex: 1;
+        padding-left: 16px;
+        &__field {
+          height: 26px;
+          border: 1px solid #e0e0e0;
+          margin-left: -8px;
+        }
+        &__input {
+          transform: translateY(-1px);
+          padding: 0 6px;
+        }
+        &__select {
+          border-radius: 3px;
+          padding: 0 2px;
+        }
+        &__date {
+          padding: 0 6px;
+          margin: 0;
+          height: 26px;
+          border-radius: unset;
+          &_time {
+            margin-left: 10px;
+          }
+          input {
+            font-size: 12px;
+            line-height: 12px;
+          }
+        }
+        &__checkbox {
+          transform: translateY(2px);
+          &__name {
+            padding: 0 20px 0 8px;
+          }
+        }
+        .ck-editor {
+          width: 593px;
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

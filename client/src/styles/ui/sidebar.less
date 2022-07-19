@@ -1,0 +1,83 @@
+.sidebar-menu {
+    background-color: @sidebar-menu-bg;
+    color: @white-color;
+    &__header {
+        text-align: center;
+        background-color: @primary-color;
+        color: @white-color;
+        font-size: 20px;
+        height: 60px;
+        line-height: 60px;
+        font-weight: bold;
+    }
+
+}
+
+.ant-menu-item {
+    height: 55px !important;
+    padding-left: 25px !important;
+    font-size: 16px !important;
+    &-selected {
+        background-color: @sidebar-menu-active-bg !important;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 5px;
+            background-color: @sidebar-menu-border-left-item;
+        }
+        a {
+            color: @white-color;
+            &:hover {
+                color: @white-color;
+            }
+        }
+
+    }
+    &-icon {
+        color: @white-color;
+        margin-right: 22px !important;
+        &:hover {
+            color: @white-color;
+        }
+    }
+    > .ant-menu-title-content {
+        margin-left: 0px !important;
+    }
+    &:hover {
+        background-color: @sidebar-menu-active-bg;
+    }
+
+    &::after {
+        border-right: none !important;
+    }
+
+    & a {
+        color: @white-color;
+        &:hover {
+            color: @white-color;
+        }
+    }
+}
+
+.wrap-btn-signout {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    > .btn-signout {
+        width: 180px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px;
+        color: @black-color;
+        background-color: @white-color;
+        font-size: 16px;
+    }
+}

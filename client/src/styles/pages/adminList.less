@@ -1,0 +1,251 @@
+.admin-list {
+  & .ant-card-head-title {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  & .admin-card_search {
+    & .btn-yellow {
+      background-color: @yellow-color !important;
+    }
+    & .btn-back {
+      background-color: #555555 !important;
+    }
+  }
+  & .ant-input-affix-wrapper {
+    & .ant-input {
+      font-size: 12px;
+    }
+  }
+  .customer-card_table .ant-card-body {
+    margin-top: -24px;
+  }
+  & .custom-row {
+    margin: 0px 14px;
+    width: 776px;
+    .row-custom-table {
+      border: 1px solid @border-table-color;
+      border-bottom: none;
+    }
+    & .background-gray {
+      background-color: #f8f8f8;
+    }
+    & .ant-col {
+      width: 50%;
+    }
+    & .__td,
+    .__th {
+      border-bottom: 1px solid @border-table-color;
+    }
+  }
+  & .ant-modal-close-x {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  & .btn {
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    &-confirm {
+      background-color: #2461ad;
+    }
+    &-back {
+      background-color: @grey-10;
+    }
+  }
+}
+
+.notification__list {
+  & .ant-table-column-has-sorters {
+    & .ant-table-column-sorters {
+      text-align: left;
+      padding-left: 15px;
+    }
+  }
+  & .ant-table-column-has-sorters:nth-child(5) {
+    & .ant-table-column-sorters {
+      width: 100px;
+    }
+  }
+  & .ant-table-column-has-sorters:nth-child(1) {
+    & .ant-table-column-sorters {
+      width: 80px;
+    }
+  }
+  & .ant-table-column-has-sorters:nth-child(2) {
+    & .ant-table-column-sorters {
+      width: 120px;
+    }
+  }
+  & .ant-table-row-level-0 {
+    & .ant-table-cell:nth-child(5) {
+      text-align: left;
+      padding-left: 21px;
+    }
+  }
+}
+
+.modal-regist {
+  & .__td {
+    padding-left: 5px !important;
+  }
+  & .__th {
+    padding-top: 12px !important;
+  }
+}
+
+.custom-card-detail-table__td {
+  height: auto !important;
+  .manual-email_reference {
+    height: 151px;
+    overflow-y: scroll;
+    width: 585px;
+
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: #d6d6d6;
+      border-radius: 10px;
+      width: 3px;
+    }
+    &::-webkit-scrollbar {
+      height: 3px;
+      background-color: #fff;
+      width: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #3e3e3e;
+      width: 3px;
+      border-radius: 10px;
+    }
+
+    .manual-email_reference__fake {
+      height: 25px;
+    }
+  }
+  .btn-manual-email {
+    background-color: #24a854;
+    color: #fff;
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    margin-left: -7px;
+    line-height: 30;
+
+    p {
+      line-height: 20px;
+    }
+  }
+}
+
+.modal-confirm-mail-sended {
+  .ant-modal-close {
+    display: none;
+  }
+  .btn-ok-mail-sended {
+    background-color: #2461ad;
+    color: #fff;
+    width: 76px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+  }
+}
+.custom-input-home-page {
+  border: none !important;
+}
+
+.modal-upload-home-page {
+  .modal-upload-home-page_file {
+    width: 225px;
+    .ant-upload.ant-upload-select-picture-card {
+      width: 225px;
+      height: 276px;
+    }
+  }
+  .custom-pagination-list-design {
+    .btn-prev {
+      width: 38px;
+      height: 38px;
+      border: solid 1px #3a3a3a;
+      border-radius: 2px;
+      background-color: #fff;
+      color: #3a3a3a;
+    }
+
+    .number-display {
+      font-size: 20px;
+      color: #3a3a3a;
+      line-height: 38px;
+    }
+  }
+}
+
+.custom-modal-area-list {
+  .ant-modal-content {
+    width: 590px;
+
+    .ant-modal-close {
+      display: none;
+    }
+    .ant-modal-header {
+      max-height: 140px;
+      .ant-modal-title {
+        font-size: 24px;
+        padding: 30px;
+      }
+    }
+    .ant-modal-body {
+      padding: 0 !important;
+
+      .custom-card-modal {
+        .ant-card-head {
+          background-color: #d6d6d6;
+          color: #000000;
+          .ant-card-head-title {
+            font-size: 22px;
+          }
+        }
+
+        .ant-card-body {
+          padding: 0;
+
+          h3 {
+            font-size: 22px;
+            width: 530px;
+          }
+          .ant-table-cell {
+            background-color: #fff;
+            color: #000000;
+            border-top: solid 1px #d6d6d6;
+            border-bottom: solid 1px #d6d6d6;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .btn-cancel-modal-list {
+      background-color: #555555;
+      color: #fff;
+      font-size: 24px;
+      width: 186px;
+      height: 60px;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}
+
+.list-orders-user {
+  max-height: 1907px;
+  overflow: auto;
+  .custom-card-customer-info {
+    .ant-card-head {
+      background-color: #ccefd9;
+
+      .ant-card-head-title {
+        color: #24a854;
+      }
+    }
+  }
+}

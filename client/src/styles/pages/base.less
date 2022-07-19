@@ -1,0 +1,32 @@
+.ant-input {
+    font-size: 12px;
+}
+.ant-table-column-sort {
+    & .anticon{
+        display: none;
+    }
+    & .active{
+        display: block;
+    }
+}
+.ant-table-column-sorter-up, .ant-table-column-sorter-down {
+    font-size: 16px;
+}
+.ant-empty-description{
+    visibility: hidden;
+}
+.ant-empty-description::after {
+    content: 'Không có data';
+    visibility: visible;
+    margin-left: -40px;
+}
+.custome-dropdown {
+    padding-left: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    // background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7'><path id='Path_268' data-name='Path 268' d='M9,16l7-5L9,6Z' transform='translate(16 -9) rotate(90)' fill='#acacac'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 102%;
+    background-position-y: 2px;
+}
